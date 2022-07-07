@@ -1,5 +1,12 @@
+/**
+ * Fonction IIFE qui permet de contrôler l'affichage du carrousel
+ * Auteur : Claudia Lisboa
+ * Date de dernière modification : 6 juillet 2022
+ * 
+ */
 
-(function(){
+
+ (function(){
     console.log('Début du carrousel')
     let elmGalerie = document.querySelector('.galerie')
     let elmGalerieImg = elmGalerie.querySelectorAll("figure figure img")
@@ -47,7 +54,7 @@
 
     function ajouter_elmRadio(){
         let elmRadio = document.createElement('input')
-	@@ -32,15 +59,13 @@
+
         elmRadio.dataset.index = index
         index = index+1
         elmCarrousel__radio.appendChild(elmRadio)
@@ -56,3 +63,6 @@
             elmCarrousel__figure.children[this.dataset.index].classList.add('carrousel__figure__img--activer')
         })
     }
+
+
+})()
