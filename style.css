@@ -4,7 +4,7 @@
   height: 100vh;
   top: 0;
   left: 0;
-  background-color: aqua;
+  background-color: rgb(133, 242, 242);
   z-index: 9;
   opacity: 0;
   transform: scale(0);
@@ -41,7 +41,7 @@
 }
 
 .carrousel__figure__img--activer {
-  opacity: 1;
+  opacity: 2;
 }
 
 .carrousel__radio {

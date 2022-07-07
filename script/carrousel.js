@@ -52,19 +52,27 @@
 * 
 * */
 
-   function ajouter_elmRadio(){
-       let elmRadio = document.createElement('input')
-       elmRadio.setAttribute('type','radio')
-       elmRadio.setAttribute('name','radImg')
-       elmRadio.dataset.index = index
-       index = index+1
-       elmCarrousel__radio.appendChild(elmRadio)
-       /* Écouteur pour sélectionner une nouvelle image */ 
-       elmRadio.addEventListener('mousedown', function(){    
-           elmCarrousel__figure.children[this.dataset.index].classList.add('carrousel__figure__img--activer')
-       })
-   }
- 
+  
+function ajouter_elmRadio(){
+    let elmRadio = document.createElement('input')
+    elmRadio.setAttribute('type','radio')
+    elmRadio.setAttribute('name','radImg')
+    elmRadio.dataset.index = index
+    index = index+1
+    elmCarrousel__radio.appendChild(elmRadio)
+    /* Écouteur pour sélectionner une nouvelle image */ 
+    elmRadio.addEventListener('mousedown', function(){  
+        if(ancien_index != -1) {
+
+        elmCarrousel__figure.children[this.dataset.index].classList.add('carrousel__figure__img--activer')
+
+        }
+        elmCarrousel__figure.children[this.dataset.index].classList.add.('carroussel__figure-img-activer')
+        ancien_index = this.dataset.index
+    })
+
+}
+
 
 
 

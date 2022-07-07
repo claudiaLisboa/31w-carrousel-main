@@ -7,6 +7,7 @@
  */
 function carrousel_31w_enqueue()
 {
+    
     $version_css = filemtime(plugin_dir_path(__FILE__) . "style.css");
     $version_js = filemtime(plugin_dir_path(__FILE__) . "script/carrousel.js");
     //var_dump(__FILE__); die()
