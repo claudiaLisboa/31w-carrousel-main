@@ -1,7 +1,8 @@
 <?php get_header(); ?> 
 <section class="site__main">
-<h1>Le plus beau chien du monde 2022  </h1>
+<h1>Mon premier modèle Wordpress</h1>
 <?php
+    
 if (have_posts()):
     while(have_posts()) : the_post(); ?>
         <h2><?php the_title(); ?></h2>
@@ -14,9 +15,6 @@ if (have_posts()):
         ?>
         <code><?= $sigle ?></code>
         <code><?= $heure ?></code>
-
-
-
 
 
     <?php endwhile; ?>
