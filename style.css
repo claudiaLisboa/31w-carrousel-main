@@ -84,9 +84,8 @@ h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
-
 /* Grouping content
-	 ========================================================================== */
+ ========================================================================== */
 /**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
@@ -107,7 +106,7 @@ pre {
 }
 
 /* Text-level semantics
-	 ========================================================================== */
+ ========================================================================== */
 /**
  * Remove the gray background on active links in IE 10.
  */
@@ -132,7 +131,6 @@ b,
 strong {
   font-weight: bolder;
 }
-
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
@@ -162,7 +160,6 @@ sup {
   position: relative;
   vertical-align: baseline;
 }
-
 sub {
   bottom: -0.25em;
 }
@@ -172,7 +169,7 @@ sup {
 }
 
 /* Embedded content
-	 ========================================================================== */
+ ========================================================================== */
 /**
  * Remove the border on images inside links in IE 10.
  */
@@ -181,7 +178,7 @@ img {
 }
 
 /* Forms
-	 ========================================================================== */
+ ========================================================================== */
 /**
  * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
@@ -235,7 +232,6 @@ button::-moz-focus-inner,
   border-style: none;
   padding: 0;
 }
-
 /**
  * Restore the focus styles unset by the previous rule.
  */
@@ -245,7 +241,6 @@ button:-moz-focusring,
 [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
-
 /**
  * Correct the padding in Firefox.
  */
@@ -281,7 +276,6 @@ progress {
 textarea {
   overflow: auto;
 }
-
 /**
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
@@ -616,7 +610,6 @@ textarea {
 Guide efficace sur l'utilisation de grid
 https://css-tricks.com/snippets/css/complete-guide-grid/
 */
-
 .site {
   display: grid;
   grid-template-columns: auto;
@@ -647,12 +640,10 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
   background-color: #cdebf3;
 }
 
-
 .site__footer {
   grid-area: footer;
   background-color: #7bcbdf;
 }
-
 
 @media screen and (min-width: 700px) {
   .site {
@@ -664,5 +655,4 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
 }
 
 /* @import "no-sidebar"; */
-/*# sourceMappingURL=style.css.map *//* @import "no-sidebar"; */
 /*# sourceMappingURL=style.css.map */
