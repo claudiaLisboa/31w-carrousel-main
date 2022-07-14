@@ -40,4 +40,4 @@ add_action( 'after_setup_theme', 'mon_31w_setup' );
                              false);
 
     }
-    add_action( 'wp_enqueue_scripts', 'mon_31w_enqueue' );
+    add_action( 'wp_enqueue_scripts', 'mon_31w_enqueue' ); 
