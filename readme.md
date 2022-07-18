@@ -2,12 +2,10 @@
 ## Thème et plugin  Wordpress
 ### Contient 12 commits
 
-[github-page](https://eddytuto.github.io/theme-31w)
-> Le thème utilise une structure de grid pour formater le layout
+<img width="1441" alt="WP_TP1_1" src="https://user-images.githubusercontent.com/21189063/179578983-78adc546-b484-43b5-9cd1-f38318452ced.png">
 
+<img width="1446" alt="WP_TP1_2" src="https://user-images.githubusercontent.com/21189063/179579002-955783e4-01c9-4cfa-b0bf-f9bdb4c784e0.png">
 
-Pour plus d'information sur la conception de thème
-[WP developper guide](https://developper.wordpress.org/theme)
+<img width="1440" alt="WP_TP1_3" src="https://user-images.githubusercontent.com/21189063/179579026-9e06eb32-57a5-4195-a1bf-9c2a8e40dc56.png">
 
-Pour plus d'information sur la structure grid
-[css-tricks/grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+<img width="1438" alt="WP_TP1_4" src="https://user-images.githubusercontent.com/21189063/179579047-aa0017e6-1f85-4f24-9082-30ad301eab00.png">
