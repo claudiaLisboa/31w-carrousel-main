@@ -1,6 +1,6 @@
 # TP1
 ## Thème et plugin  Wordpress
-### Contient 16 commits
+### Contient 21 commits
 
 <img width="1441" alt="WP_TP1_1" src="https://user-images.githubusercontent.com/21189063/179578983-78adc546-b484-43b5-9cd1-f38318452ced.png">
 
