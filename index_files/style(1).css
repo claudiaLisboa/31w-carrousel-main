@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*! 
-Theme Name: 31W-cours 
+Theme Name: 31W-prof
 Author: Eddy Martin
 Author URI: http://github.com/eddytuto
 Description: Thème de base pour le cours de 31W
@@ -14,11 +14,6 @@ Text Domain: 31-w
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# variable
-	- couleur
-	- police
-	- dimension
-
 # Generic
 	- Normalize
 	- Box sizing
@@ -27,8 +22,8 @@ Text Domain: 31-w
 	- Elements
 	- Links
 	- Forms
-## Layout
-# Composent
+## Layouts
+# Composents
 	- Navigation
 	- Posts and pages
 	- Widgets
@@ -41,8 +36,12 @@ Text Domain: 31-w
 	- Alignments
 
 --------------------------------------------------------------*/
-/* variable
---------------------------------------------- */
+/**
+* Police de caractères
+*/
+/* couleur titre */
+/* couleur lien */
+/* couleur bouton */
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -84,8 +83,9 @@ h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
+
 /* Grouping content
- ========================================================================== */
+	 ========================================================================== */
 /**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
@@ -106,7 +106,7 @@ pre {
 }
 
 /* Text-level semantics
- ========================================================================== */
+	 ========================================================================== */
 /**
  * Remove the gray background on active links in IE 10.
  */
@@ -131,6 +131,7 @@ b,
 strong {
   font-weight: bolder;
 }
+
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
@@ -160,6 +161,7 @@ sup {
   position: relative;
   vertical-align: baseline;
 }
+
 sub {
   bottom: -0.25em;
 }
@@ -169,7 +171,7 @@ sup {
 }
 
 /* Embedded content
- ========================================================================== */
+	 ========================================================================== */
 /**
  * Remove the border on images inside links in IE 10.
  */
@@ -178,7 +180,7 @@ img {
 }
 
 /* Forms
- ========================================================================== */
+	 ========================================================================== */
 /**
  * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
@@ -232,6 +234,7 @@ button::-moz-focus-inner,
   border-style: none;
   padding: 0;
 }
+
 /**
  * Restore the focus styles unset by the previous rule.
  */
@@ -241,6 +244,7 @@ button:-moz-focusring,
 [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
+
 /**
  * Correct the padding in Firefox.
  */
@@ -276,6 +280,7 @@ progress {
 textarea {
   overflow: auto;
 }
+
 /**
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
@@ -371,48 +376,63 @@ html {
 /* Elements
 --------------------------------------------- */
 body {
-  background: #fff;
+  background: #fefefe;
 }
 
 /**
 *  styles pour h1,h2,h3,h4,h5mh6 et p
 */
 h1, h2 {
-  color: #666666;
+  color: #ec8989;
+}
+
+h2, h3, h4, h5, h6 {
+  color: #be1e1e;
+}
+
+p {
+  color: #3c3c3c;
+}
+
+h1, h2 {
   font-family: "Montserrat", sans-serif;
 }
 
 h3, h4, h5, h6, p {
-  color: #1a1a1a;
-  font-family: "Roboto", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 
+code {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* font-size */
 h1 {
-  font-size: clamp(2rem, 5vw, 5rem);
+  font-size: clamp(2.5rem, 5vw, 6rem);
 }
 
 h2 {
-  font-size: clamp(1.5rem, 3vw, 3rem);
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
 }
 
 h3 {
-  font-size: clamp(1.3rem, 2.5vw, 2rem);
+  font-size: clamp(1.5rem, 2vw, 3rem);
 }
 
 h4 {
-  font-size: clamp(1.2rem, 2vw, 2rem);
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
 }
 
 h5 {
-  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  font-size: clamp(1.5rem, 2vw, 2.4rem);
 }
 
 h6 {
-  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  font-size: clamp(1.5rem, 2vw, 2.3rem);
 }
 
 p {
-  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  font-size: clamp(0.8rem, 2vw, 1.8rem);
 }
 
 hr {
@@ -473,16 +493,15 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-  color: #4169e1;
-  font-family: "Roboto", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  color: #5276e4;
 }
 
 a:visited {
-  color: #800080;
+  color: #182458;
 }
 
 a:hover, a:focus, a:active {
-  color: #191970;
+  color: #1d62a3;
 }
 
 a:focus {
@@ -578,81 +597,4 @@ select {
 textarea {
   width: 100%;
 }
-
-/*--------------------------------------------------------------
-# Composante
---------------------------------------------------------------*/
-.menu__sidebar__ul {
-  list-style-type: none;
-  margin: 0;
-  padding: .4rem 0;
-}
-
-.menu__sidebar__ul .menu-item {
-  margin: .5rem 0;
-}
-
-.menu__sidebar__ul .menu-item a {
-  padding: .5rem;
-  line-height: 1.5rem;
-}
-
-.menu__sidebar__ul .menu-item a:hover {
-  background-color: #a4dbe9;
-}
-
-/*--------------------------------------------------------------
-
-/*--------------------------------------------------------------
-# Layout
---------------------------------------------------------------*/
-/*
-Guide efficace sur l'utilisation de grid
-https://css-tricks.com/snippets/css/complete-guide-grid/
-*/
-.site {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-areas: "header header"
- "sidebar sidebar"
- "main main"
- "footer footer";
-}
-
-.site__header, .site__sidebar, .site__main, .site__footer {
-  padding: 1vh 3vw;
-}
-
-.site__header {
-  grid-area: header;
-  background-color: #7bcbdf;
-}
-
-.site__main {
-  grid-area: main;
-  overflow: hidden;
-  /* Resolves issue with <pre> elements forcing full width. */
-  background-color: #a4dbe9;
-}
-
-.site__sidebar {
-  grid-area: sidebar;
-  background-color: #cdebf3;
-}
-
-.site__footer {
-  grid-area: footer;
-  background-color: #7bcbdf;
-}
-
-@media screen and (min-width: 700px) {
-  .site {
-    grid-template-columns: 30vw auto;
-    grid-template-areas: "header header"
- "sidebar main"
- "footer footer";
-  }
-}
-
-/* @import "no-sidebar"; */
 /*# sourceMappingURL=style.css.map */
