@@ -3,7 +3,6 @@ Guide efficace sur l'utilisation de grid
 https://css-tricks.com/snippets/css/complete-guide-grid/
 */
 
-
 .site {
 
 
@@ -14,7 +13,6 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
 		"sidebar sidebar"
 		"main main"
 		"footer footer";
-	
 
 }
 .site__header, .site__sidebar, .site__main, .site__footer {
@@ -53,6 +51,5 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
 		"footer footer";
 	}	
 }
-
 
 /* @import "no-sidebar"; */
